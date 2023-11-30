@@ -46,19 +46,19 @@
     </nav>
 
     <p style="color: black;">Para consultas completar el siguiente formulario:</p>
-    <form action="gracias.html" target="_blank">
+        <form action="gracias.html" target="_blank">
         <fieldset>
 
             <label for="nombre">Nombre: </label>
-            <input size="30" type="text" name="nombre" placeholder="Ingrese su nombre aqui">
+            <input size="30" type="text" name="nombre" id="name" placeholder="Ingrese su nombre aqui">
             <br><br>
 
             <label for="apellido">Apellido: </label>
-            <input size="30" type="text" name="apellido" placeholder="Ingrese su apellido aqui">
+            <input size="30" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido aqui">
             <br><br>
 
             <label for="email">e-mail: </label>
-            <input type="email" name="email" placeholder="Ingrese su e-mail aquí">
+            <input type="email" name="email" id="email" placeholder="Ingrese su e-mail aquí">
             <br><br>
 
             <label for="consulta">Ingrese a continuación su consulta en menos de 300
@@ -71,10 +71,11 @@
 
         <br><br>
         <input type="reset" value="Borrar formulario">
-        <input type="submit" value="Enviar datos">
-
+        <button type="submit">Enviar datos</button>
+        
 
     </form>
+<script src="consultas.js"></script>
 
     <footer id="final" class="item pie">
         <a style="color: white;" href="#inicio"><b>Ir al inicio </b>
