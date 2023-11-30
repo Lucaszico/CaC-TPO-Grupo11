@@ -50,35 +50,36 @@
         <form action="submit_order.html" target="_blank">
 
             <label for="name">Nombre:</label><br>
-            <input type="text" id="name" class="name1" name="name" placeholder="Juan Caballo Gutierrez"><br>
+            <input type="text" id="name" class="name1" name="Nombre" placeholder="Juan Caballo Gutierrez"><br>
             <br>
 
             <label for="address">Dirección de envío:</label><br>
-            <input type="text" id="address" class="address1" name="address"
+            <input type="text" id="address" class="address1" name="Direccion"
                 placeholder="País-Ciudad-Código Postal-Calle-Número"><br>
             <br>
 
             <label for="order">Detalles del Pedido:</label><br>
-            <textarea id="order" name="order"></textarea><br>
+            <textarea id="order" name="Orden"></textarea><br>
 
             <h1 id="titulo_met">Método de pago</h1>
             <div class="payment-method">
                 <label>
-                    <input type="radio" name="metodo_pago" value="DebitoTarjeta">
+                    <input type="radio" name="status" value="DebitoTarjeta" required>
                     Débito o Tarjeta
                 </label><br>
                 <label>
-                    <input type="radio" name="metodo_pago" value="Contrareembolso">
+                    <input type="radio" name="status" value="Contrareembolso" required>
                     Contrareembolso
                 </label><br>
                 <label>
-                    <input type="radio" name="metodo_pago" value="TransferenciaBancaria">
+                    <input type="radio" name="status" value="TransferenciaBancaria" required >
                     Transferencia Bancaria
                 </label><br>
             </div>
-            <div><input type="submit" value="Enviar Pedido"></div>
+            <div><input type="submit" value="Enviar Pedido" id="submit"></div>
         </form>
     </center>
+        <script src="pedidos.js"></script>
 
     <footer id="final" class="item pie">
         <a style="color: white;" href="#inicio"><b>Ir al inicio </b>
